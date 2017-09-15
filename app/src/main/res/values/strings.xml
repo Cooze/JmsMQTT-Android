@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JmsMQTT 测试</string>
+
+    <string name="server_host_lable">服务端IP:</string>
+    <string name="server_host_input">请输入连接服务端ip地址</string>
+    <string name="server_id_lable">服务端发布主题:</string>
+    <string name="server_id_input">请输入服务端发布主题</string>
+    <string name="android_id_edit">终端订阅主题:</string>
+    <string name="android_id_input">请输入终端订阅主题</string>
+    <string name="connect">连接</string>
+</resources>

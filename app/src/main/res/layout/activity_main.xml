@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.cooze.jmsmqtt.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:padding="15dip"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/server_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/server_host_lable" />
+
+        <EditText
+            android:id="@+id/server_host_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/server_host"
+            android:hint="@string/server_host_input"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/server_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/server_host"
+            android:layout_marginTop="65dp"
+            android:text="@string/server_id_lable" />
+
+        <EditText
+            android:id="@+id/server_id_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/server_id"
+            android:hint="@string/server_id_input"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/android_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/server_id"
+            android:layout_marginTop="30dp"
+            android:text="@string/android_id_edit" />
+
+        <EditText
+            android:id="@+id/android_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@+id/android_id"
+            android:hint="@string/android_id_input"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/connect_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/android_edit"
+            android:layout_centerHorizontal="true"
+            android:onClick="conn"
+            android:text="@string/connect" />
+
+        <TextView
+            android:id="@+id/show_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/connect_server" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
